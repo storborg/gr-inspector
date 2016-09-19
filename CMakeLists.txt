@@ -23,6 +23,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(gr-inspector CXX C)
 enable_testing()
+include (cmake/Modules/CMakeParseArgumentsCopy.cmake)
 
 cmake_policy(SET CMP0015 NEW)
 
