@@ -336,6 +336,7 @@ namespace gr {
       if(d_rf_map->size() <= d_marker_count) {
         for (int i = 0; i < d_rf_map->size(); i++) {
           if(!d_analysis_texts[i].empty()) {
+            std::cout << "-- analysis text message --\n" << d_analysis_texts[i] << std::endl;
             d_markers[i]->add_text(d_analysis_texts[i]);
           }
         }
